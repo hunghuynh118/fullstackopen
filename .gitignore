@@ -2,5 +2,8 @@
 **/node_modules/
 **/package-lock.json
 
+# environments
+**/.env
+
 # misc
 **/.DS_Store
