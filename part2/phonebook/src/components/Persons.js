@@ -1,13 +1,9 @@
-const Person = ({ person }) => (
-  <p>
-    {person.name} {person.number}
-  </p>
-);
+import Person from './Person';
 
-const Persons = ({ personsToShow }) => (
+const Persons = ({ personsToShow, handleDelete }) => (
   <div>
     {personsToShow.map(person => (
-      <Person key={person.id} person={person} />
+      <Person key={person.id} person={person} handleDelete={handleDelete} />
     ))}
   </div>
 );
